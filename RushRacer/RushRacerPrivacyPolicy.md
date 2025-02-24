@@ -1,9 +1,9 @@
-**Privacy Policy for [Your Game Name]**
+**Privacy Policy for Rush Racer**
 
-_Last Updated: [Month Day, Year]_
+_Last Updated: [February 24, 2025]_
 
 **1. Introduction**  
-[Your Game Name] (“we”, “us”, or “our”) is developed and published by [Your Company Name], located in Istanbul, Turkey. We are committed to protecting your personal data and your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our game (“Game”), available on the Apple App Store and Google Play Store. By downloading, installing, or using the Game, you consent to the practices described in this Privacy Policy.
+Rush Racer (“we”, “us”, or “our”) is developed and published by [Your Company Name], located in Istanbul, Turkey. We are committed to protecting your personal data and your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our game (“Game”), available on the Apple App Store and Google Play Store. By downloading, installing, or using the Game, you consent to the practices described in this Privacy Policy.
 
 This Policy is designed to comply with major data protection laws including:  
 - The European Union General Data Protection Regulation (GDPR)  
@@ -84,7 +84,7 @@ We may update this Privacy Policy from time to time. When we do, we will revise 
 
 If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you wish to exercise your rights as described above, please contact us at:
 
-[Your Company Name]  
-[Your Street Address]  
-Istanbul, [Postal Code], Turkey  
-Email: [Your Contact Email]
+BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ  
+TÜRKALİ MAH.MAŞUKLAR YOKUŞU SK NO:79/5 BEŞİKTAŞ  
+Istanbul, 34357, Türkiye  
+Email: hello@borkistanbul.com
