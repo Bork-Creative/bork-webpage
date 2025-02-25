@@ -1,14 +1,14 @@
 **Privacy Policy for Rush Racer**
 
-_Last Updated: [February 24, 2025]_
+_Last Updated: February 24, 2025_
 
 **1. Introduction**  
-Rush Racer (“we”, “us”, or “our”) is developed and published by [Your Company Name], located in Istanbul, Turkey. We are committed to protecting your personal data and your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our game (“Game”), available on the Apple App Store and Google Play Store. By downloading, installing, or using the Game, you consent to the practices described in this Privacy Policy.
+Rush Racer (“we”, “us”, or “our”) is developed and published by BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ, located in Istanbul, Türkiye. We are committed to protecting your personal data and your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our game (“Game”), available on the Apple App Store and Google Play Store. By downloading, installing, or using the Game, you consent to the practices described in this Privacy Policy.
 
 This Policy is designed to comply with major data protection laws including:  
 - The European Union General Data Protection Regulation (GDPR)  
 - The California Consumer Privacy Act (CCPA) and similar U.S. privacy laws  
-- Turkey’s Law on the Protection of Personal Data (KVKK)  
+- Türkiye Law on the Protection of Personal Data (KVKK)  
 - Other applicable global data protection regulations
 
 **2. Information We Collect**
