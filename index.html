@@ -135,7 +135,7 @@
             <a href="https://apps.apple.com/us/app/rush-racer">
                 <img src="images/appstore_badge.png" alt="Apple App Store">
             </a>
-            <a href="#" id="privacy-policy-link">Privacy Policy</a>
+            <a href="#" id="privacy-policy-link">Privacy Policy</a> | <a href="#" id="terms-of-service-link">Terms of Service</a>
         </div>
         
         <!-- <img src="path-to-launcher-icon.png" alt="Game Launcher Icon" class="launcher-icon"> -->
@@ -155,6 +155,15 @@
             <span class="close">&times;</span>
             <h2>Privacy Policy for [Your Game Name]</h2>
             <div id="privacy-policy-content"></div>
+        </div>
+    </div>
+    
+    <!-- Terms of Service Modal -->
+    <div id="tos-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Terms of Service for [Your Game Name]</h2>
+            <div id="tos-content"></div>
         </div>
     </div>
 
@@ -198,6 +207,48 @@
             modal.style.display = "block";
             fetchAndRenderMarkdown();
         }
+        
+        // Get the Terms of Service modal elements
+        var tosModal = document.getElementById("tos-modal");
+        var tosBtn = document.getElementById("terms-of-service-link");
+        var tosContent = document.getElementById("tos-content");
+
+        function fetchAndRenderTos() {
+            fetch('RushRacer/RushRacerTermsOfService.md')
+                .then(response => {
+                    console.log('Response:', response);
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    console.log('Markdown text:', text);
+                    tosContent.innerHTML = marked.parse(text);
+                })
+                .catch(error => {
+                    console.error('Error fetching terms of service:', error);
+                    tosContent.innerHTML = '<p>Error loading terms of service.</p>';
+                });
+        }
+
+        tosBtn.onclick = function() {
+            tosModal.style.display = "block";
+            fetchAndRenderTos();
+        };
+
+        // Add event listener to close the Terms of Service modal when clicking its close button
+        var tosClose = tosModal.getElementsByClassName("close")[0];
+        tosClose.onclick = function() {
+            tosModal.style.display = "none";
+        };
+
+        // Add event listener to close the Terms of Service modal when clicking outside of it
+        window.addEventListener("click", function(event) {
+            if (event.target == tosModal) {
+                tosModal.style.display = "none";
+            }
+        });
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
