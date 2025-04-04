@@ -1,4 +1,4 @@
-## Terms of Service
+## Terms of Service for Rush Racer
 
 **Last Updated:** February 24, 2025
 

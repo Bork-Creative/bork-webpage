@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>Rush Racer Privacy Policy</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <title>Rush Racer Terms of Service</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,21 +59,21 @@
 </head>
 <body>
     <header>
-        <img src="images/bork_logo.png" alt="Bork Creative Studio Logo">
-        <h1>Rush Racer Privacy Policy</h1>
+        <img src="../images/bork_logo.png" alt="Bork Creative Studio Logo">
+        <h1>Rush Racer Terms of Service</h1>
     </header>
     <div class="modal-content">
         <span class="close">&times;</span>
-        <div id="privacy-policy-content"></div>
+        <div id="terms-of-service-content"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        // Get the content div for the privacy policy
-        var contentDiv = document.getElementById("privacy-policy-content");
+        // Get the content div for the terms of service
+        var contentDiv = document.getElementById("terms-of-service-content");
 
         // Function to fetch and render the markdown content
         function fetchAndRenderMarkdown() {
-            fetch('RushRacer/RushRacerPrivacyPolicy.md')
+            fetch('RushRacerTermsOfService.md')
                 .then(response => {
                     console.log('Response:', response);
                     if (!response.ok) {
@@ -86,8 +86,8 @@
                     contentDiv.innerHTML = marked.parse(text);
                 })
                 .catch(error => {
-                    console.error('Error fetching privacy policy:', error);
-                    contentDiv.innerHTML = '<p>Error loading privacy policy.</p>';
+                    console.error('Error fetching terms of service:', error);
+                    contentDiv.innerHTML = '<p>Error loading terms of service.</p>';
                 });
         }
 
@@ -104,7 +104,9 @@
 
         // Add event listener to close the modal when clicking outside of it
         window.onclick = function(event) {
-            // Do nothing on outside click
+            if (event.target == document.body) {
+                // Do nothing on outside click
+            }
         }
     </script>
 </body>
