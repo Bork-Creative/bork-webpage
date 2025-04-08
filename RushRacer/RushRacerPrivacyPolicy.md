@@ -1,8 +1,8 @@
-**Privacy Policy for Rush Racer**
+## Privacy Policy for Rush Racer
 
 _Last Updated: February 24, 2025_
 
-**1. Introduction**  
+### 1. Introduction
 Rush Racer (“we”, “us”, or “our”) is developed and published by BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ, located in Istanbul, Türkiye. We are committed to protecting your personal data and your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our game (“Game”), available on the Apple App Store and Google Play Store. By downloading, installing, or using the Game, you consent to the practices described in this Privacy Policy.
 
 This Policy is designed to comply with major data protection laws including:  
@@ -11,7 +11,7 @@ This Policy is designed to comply with major data protection laws including:
 - Türkiye Law on the Protection of Personal Data (KVKK)  
 - Other applicable global data protection regulations
 
-**2. Information We Collect**
+### 2. Information We Collect
 
 _**a. Account and Gameplay Data**_  
 - **Player Progress & Game Data:** Your in‑game progress, achievements, settings, and other gameplay data are stored securely using Unity Gaming Services Cloud.  
@@ -24,7 +24,7 @@ _**b. Analytics and Performance Data**_
 _**c. Non-Personal Information**_  
 - We may also collect non‑identifying information about your device and usage (e.g., aggregated statistics) that cannot be used to personally identify you.
 
-**3. How We Use Your Information**
+### 3. How We Use Your Information
 
 We use the collected information for the following purposes:  
 - **Game Functionality:** To store, sync, and manage your game progress and account data.  
@@ -32,7 +32,7 @@ We use the collected information for the following purposes:
 - **Account Management:** To enable account linking with third‑party services (Google Play Games, Apple Game Center) and to help resolve any issues with your account.
 - **Legal Compliance:** To comply with applicable legal obligations and enforce our terms and policies.
 
-**4. Legal Basis for Processing (For EU and Other Jurisdictions)**
+### 4. Legal Basis for Processing (For EU and Other Jurisdictions)
 
 For users located in jurisdictions governed by the GDPR and similar laws, our legal basis for processing your personal data includes:  
 - **Consent:** Where you have given explicit consent (e.g., linking your account with external services).  
@@ -41,7 +41,7 @@ For users located in jurisdictions governed by the GDPR and similar laws, our le
 
 You may withdraw your consent at any time where processing is based on consent, subject to legal or contractual restrictions.
 
-**5. Your Rights and Choices**
+### 5. Your Rights and Choices
 
 Depending on your location, you may have the following rights regarding your personal data:  
 - **Right to Access:** You can request access to the personal data we hold about you.  
@@ -53,30 +53,30 @@ Depending on your location, you may have the following rights regarding your per
 
 For requests regarding your rights or to exercise any of these rights, please contact us using the details in Section 9.
 
-**6. Sharing and Disclosure of Your Information**
+### 6. Sharing and Disclosure of Your Information
 
 We do not sell or rent your personal information. We may share your data in the following circumstances:  
 - **Service Providers:** With trusted third‑party partners (e.g., Unity Gaming Services, Google Play Games, Apple Game Center) who perform services on our behalf. These partners are contractually obligated to handle your data only for the purposes for which it was provided.  
 - **Legal Requirements:** When required by law or in response to valid legal requests from public authorities (e.g., a court or government agency).  
 - **Business Transfers:** In connection with any merger, sale of assets, financing, or acquisition of all or a portion of our business.
 
-**7. International Data Transfers**
+### 7. International Data Transfers
 
 As our Game is available worldwide, your information may be transferred to and maintained on servers located outside your country of residence. In such cases, we ensure that appropriate safeguards (e.g., Standard Contractual Clauses, or other approved transfer mechanisms) are in place to protect your data in accordance with applicable data protection laws.
 
-**8. Data Retention**
+### 8. Data Retention
 
 We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. Once your data is no longer needed, it will be securely deleted or anonymized.
 
-**9. Data Security**
+### 9. Data Security
 
 We use a combination of technical, administrative, and physical safeguards to protect your personal data against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure. Please contact us if you have any concerns about the security of your data.
 
-**10. Children’s Privacy**
+### 10. Children’s Privacy
 
 Our Game is not directed to children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal data from children. If you believe that we have inadvertently collected such information, please contact us immediately.
 
-**11. Updates to This Privacy Policy**
+### 11. Updates to This Privacy Policy
 
 We may update this Privacy Policy from time to time. When we do, we will revise the “Last Updated” date at the top of this document and post the updated policy on our website and within the Game. We encourage you to review this Privacy Policy periodically for any changes.
 
@@ -88,3 +88,4 @@ BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ
 TÜRKALİ MAH.MAŞUKLAR YOKUŞU SK NO:79/5 BEŞİKTAŞ  
 Istanbul, 34357, Türkiye  
 Email: hello@borkistanbul.com
+**By downloading, installing, or using Rush Racer, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.**
