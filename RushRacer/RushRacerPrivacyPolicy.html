@@ -43,18 +43,7 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
+        /* Removed close button styles */
     </style>
 </head>
 <body>
@@ -63,7 +52,7 @@
         <h1>Rush Racer Privacy Policy</h1>
     </header>
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <!-- Removed close button element -->
         <div id="privacy-policy-content"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -97,10 +86,7 @@
         }
 
         // Add event listener to close the modal when clicking its close button
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            // Do nothing on close
-        }
+        // Removed close button functionality
 
         // Add event listener to close the modal when clicking outside of it
         window.onclick = function(event) {

@@ -135,7 +135,7 @@
             <a href="https://apps.apple.com/us/app/rush-racer">
                 <img src="images/appstore_badge.png" alt="Apple App Store">
             </a>
-            <a href="#" id="privacy-policy-link">Privacy Policy</a> | <a href="#" id="terms-of-service-link">Terms of Service</a>
+            <a href="RushRacer/RushRacerPrivacyPolicy.html" target="_blank" id="privacy-policy-link">Privacy Policy</a> | <a href="RushRacer/RushRacerTermsOfService.html" target="_blank" id="terms-of-service-link">Terms of Service</a>
         </div>
         
         <!-- <img src="path-to-launcher-icon.png" alt="Game Launcher Icon" class="launcher-icon"> -->
@@ -152,7 +152,7 @@
     <!-- Privacy Policy Modal -->
     <div id="privacy-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <!-- Removed close button -->
             <h2>Privacy Policy for Rush Racer</h2>
             <div id="privacy-policy-content"></div>
         </div>
@@ -161,7 +161,7 @@
     <!-- Terms of Service Modal -->
     <div id="tos-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <!-- Removed close button -->
             <h2>Terms of Service for Rush Racer</h2>
             <div id="tos-content"></div>
         </div>
@@ -170,97 +170,7 @@
     <!-- Include marked library for markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        // Get the modal
-        var modal = document.getElementById("privacy-modal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("privacy-policy-link");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // Get the content div for the privacy policy
-        var contentDiv = document.getElementById("privacy-policy-content");
-
-        // Function to fetch and render the markdown content
-        function fetchAndRenderMarkdown() {
-            fetch('RushRacer/RushRacerPrivacyPolicy.md')
-                .then(response => {
-                    console.log('Response:', response);
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    console.log('Markdown text:', text);
-                    contentDiv.innerHTML = marked.parse(text);
-                })
-                .catch(error => {
-                    console.error('Error fetching privacy policy:', error);
-                    contentDiv.innerHTML = '<p>Error loading privacy policy.</p>';
-                });
-        }
-
-        // When the user clicks the button, open the modal and fetch the markdown content
-        btn.onclick = function() {
-            modal.style.display = "block";
-            fetchAndRenderMarkdown();
-        }
-        
-        // Get the Terms of Service modal elements
-        var tosModal = document.getElementById("tos-modal");
-        var tosBtn = document.getElementById("terms-of-service-link");
-        var tosContent = document.getElementById("tos-content");
-
-        function fetchAndRenderTos() {
-            fetch('RushRacer/RushRacerTermsOfService.md')
-                .then(response => {
-                    console.log('Response:', response);
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    console.log('Markdown text:', text);
-                    tosContent.innerHTML = marked.parse(text);
-                })
-                .catch(error => {
-                    console.error('Error fetching terms of service:', error);
-                    tosContent.innerHTML = '<p>Error loading terms of service.</p>';
-                });
-        }
-
-        tosBtn.onclick = function() {
-            tosModal.style.display = "block";
-            fetchAndRenderTos();
-        };
-
-        // Add event listener to close the Terms of Service modal when clicking its close button
-        var tosClose = tosModal.getElementsByClassName("close")[0];
-        tosClose.onclick = function() {
-            tosModal.style.display = "none";
-        };
-
-        // Add event listener to close the Terms of Service modal when clicking outside of it
-        window.addEventListener("click", function(event) {
-            if (event.target == tosModal) {
-                tosModal.style.display = "none";
-            }
-        });
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        // Include marked library for markdown rendering
     </script>
 </body>
 </html>
