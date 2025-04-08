@@ -43,7 +43,6 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
-        /* Removed close button styles */
     </style>
 </head>
 <body>
@@ -52,45 +51,34 @@
         <h1>Rush Racer Privacy Policy</h1>
     </header>
     <div class="modal-content">
-        <!-- Removed close button element -->
-        <div id="privacy-policy-content"></div>
+        <div id="content"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        // Get the content div for the privacy policy
-        var contentDiv = document.getElementById("privacy-policy-content");
+        // Get the content div
+        var contentDiv = document.getElementById("content");
 
         // Function to fetch and render the markdown content
-        function fetchAndRenderMarkdown() {
-            fetch('RushRacerPrivacyPolicy.md')
+        function fetchAndRenderMarkdown(url) {
+            fetch(url)
                 .then(response => {
-                    console.log('Response:', response);
                     if (!response.ok) {
                         throw new Error('Network response was not ok ' + response.statusText);
                     }
                     return response.text();
                 })
                 .then(text => {
-                    console.log('Markdown text:', text);
                     contentDiv.innerHTML = marked.parse(text);
                 })
                 .catch(error => {
-                    console.error('Error fetching privacy policy:', error);
-                    contentDiv.innerHTML = '<p>Error loading privacy policy.</p>';
+                    console.error('Error fetching content:', error);
+                    contentDiv.innerHTML = '<p>Error loading content.</p>';
                 });
         }
 
         // Fetch and render the markdown content on page load
         window.onload = function() {
-            fetchAndRenderMarkdown();
-        }
-
-        // Add event listener to close the modal when clicking its close button
-        // Removed close button functionality
-
-        // Add event listener to close the modal when clicking outside of it
-        window.onclick = function(event) {
-            // Do nothing on outside click
+            fetchAndRenderMarkdown('RushRacerPrivacyPolicy.md');
         }
     </script>
 </body>

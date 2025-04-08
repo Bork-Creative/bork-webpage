@@ -43,7 +43,6 @@
             height: auto;
             margin: 20px auto;
             display: block;
-            /* border: 5px solid #f5bf00; Yellow border around game image */
         }
         .store-links img {
             max-width: 150px;
@@ -58,17 +57,6 @@
         .store-links a:hover {
             text-decoration: underline;
         }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.4);
-        }
         .modal-content {
             background-color: #fefefe;
             margin: 15% auto;
@@ -82,18 +70,6 @@
         .modal-content pre {
             white-space: pre-wrap;
             word-wrap: break-word;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
         }
         .launcher-icon {
             max-width: 150px;
@@ -135,6 +111,7 @@
             <a href="https://apps.apple.com/us/app/rush-racer">
                 <img src="images/appstore_badge.png" alt="Apple App Store">
             </a>
+            <br>
             <a href="RushRacer/RushRacerPrivacyPolicy.html" target="_blank" id="privacy-policy-link">Privacy Policy</a> | <a href="RushRacer/RushRacerTermsOfService.html" target="_blank" id="terms-of-service-link">Terms of Service</a>
         </div>
         
@@ -149,28 +126,7 @@
         <p>&copy; 2024 Börk Creative Studio. All rights reserved.</p>
     </footer>
 
-    <!-- Privacy Policy Modal -->
-    <div id="privacy-modal" class="modal">
-        <div class="modal-content">
-            <!-- Removed close button -->
-            <h2>Privacy Policy for Rush Racer</h2>
-            <div id="privacy-policy-content"></div>
-        </div>
-    </div>
-    
-    <!-- Terms of Service Modal -->
-    <div id="tos-modal" class="modal">
-        <div class="modal-content">
-            <!-- Removed close button -->
-            <h2>Terms of Service for Rush Racer</h2>
-            <div id="tos-content"></div>
-        </div>
-    </div>
-
     <!-- Include marked library for markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        // Include marked library for markdown rendering
-    </script>
 </body>
 </html>
