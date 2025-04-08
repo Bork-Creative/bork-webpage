@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+._*
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*~
+
+# Editor or IDE directories/settings
+.vscode/
+.idea/
+
+# If you have any environment/config files not meant for sharing
+.env
