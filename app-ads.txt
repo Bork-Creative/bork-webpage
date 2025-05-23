@@ -142,6 +142,7 @@ appnexus.com, 15629, RESELLER
 appnexus.com, 9382, RESELLER, f5ab79cb980f11d1
 appnexus.com, 15349, RESELLER, f5ab79cb980f11d1
 google.com, pub-3990748024667386, RESELLER, f08c47fec0942fa0
+google.com, pub-8813034865012517, DIRECT, f08c47fec0942fa0
 thebrave.io, 1234634, RESELLER, c25b2154543746ac
 voisetech.com, 1066, RESELLER
 webeyemob.com, 80029, RESELLER
