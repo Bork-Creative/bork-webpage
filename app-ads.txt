@@ -6,6 +6,8 @@ ownerdomain=borkistanbul.com
 managerdomain=borkistanbul.com
 google.com, pub-8813034865012517, DIRECT, f08c47fec0942fa0
 unity.com, 5839083, DIRECT, 96cabb5fbdde37a7
+rubiconproject.com, 17062, RESELLER, 0bfd66d529a55807
+triplelift.com, 95054, RESELLER, 6c33edb13117fd86
 prado.co, 14260, RESELLER
 smartadserver.com, 4578, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 5294, RESELLER, 060d053dcf45cbf3
