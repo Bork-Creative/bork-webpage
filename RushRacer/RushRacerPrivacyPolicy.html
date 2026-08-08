@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://borkistanbul.com/RushRacer/RushRacerPrivacyPolicy.html">
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <title>Rush Racer Privacy Policy</title>
     <style>
@@ -11,13 +13,14 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
             color: #212323;
+            line-height: 1.55;
         }
         header {
             background-color: #212323;
-            color: #f5bf00; /* Yellow for text */
+            color: #f5bf00;
             padding: 20px;
+            text-align: center;
         }
         header img {
             max-width: 150px;
@@ -29,19 +32,24 @@
             margin: 0;
             font-size: 2.5rem;
         }
-        .modal-content {
+        main {
             background-color: #fefefe;
-            margin: 0% auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 24px;
             border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            overflow: auto;
-            height: 80%;
+            width: min(80%, 760px);
         }
-        .modal-content pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
+        h2, h3, h4 {
+            line-height: 1.25;
+        }
+        a {
+            color: #8a6a00;
+        }
+        ul {
+            padding-left: 1.4rem;
+        }
+        li {
+            margin: 0.35rem 0;
         }
     </style>
 </head>
@@ -50,40 +58,198 @@
         <img src="../images/bork_logo.png" alt="Bork Creative Studio Logo">
         <h1>Rush Racer Privacy Policy</h1>
     </header>
-    <div class="modal-content">
-        <div id="content"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        // Get the content div
-        var contentDiv = document.getElementById("content");
+    <main>
+        <h2>Privacy Policy for Rush Racer</h2>
+        
+        <p><em>Last Updated: August 8, 2026</em></p>
+        
+        <h3>1. Introduction</h3>
+        
+        <p>Rush Racer (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is developed and published by BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ, located in Istanbul, Türkiye. This Privacy Policy explains how we collect, use, disclose, and protect information when you download, install, access, or use Rush Racer (the &quot;Game&quot;) on Apple App Store, Google Play Store, or other supported platforms.</p>
+        
+        <p>This Privacy Policy describes our own data practices and the services we use to run the Game, including service providers, analytics providers, attribution providers, advertising networks, mediation platforms, and measurement partners. These services help provide game functionality, analytics, attribution, advertising, ad personalization where permitted, ad measurement, fraud prevention, and service improvement.</p>
+        
+        <h3>2. Laws and Regions Covered</h3>
+        
+        <p>This Privacy Policy is designed to address major data protection requirements that may apply to the Game, including:</p>
+        
+        <ul>
+          <li>The European Union General Data Protection Regulation (GDPR).</li>
+          <li>United Kingdom data protection laws and the UK GDPR.</li>
+          <li>EFTA/EEA privacy and consent requirements.</li>
+          <li>California privacy laws, including the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), and similar U.S. state privacy laws.</li>
+          <li>The U.S. Children's Online Privacy Protection Act (COPPA) and similar child privacy laws.</li>
+          <li>Türkiye Law on the Protection of Personal Data (KVKK).</li>
+          <li>Apple App Store and Google Play privacy and data safety requirements.</li>
+        </ul>
+        
+        <h3>3. Information We Collect</h3>
+        
+        <p>We and our service providers may collect the following categories of information, depending on how you use the Game, your device settings, your consent choices, and the SDKs enabled for your region and platform.</p>
+        
+        <h4>a. Account and Gameplay Data</h4>
+        
+        <ul>
+          <li><strong>Player progress and game data:</strong> In-game progress, achievements, settings, inventory, scores, and related gameplay state may be stored locally and/or through Unity Gaming Services Cloud or other backend services.</li>
+          <li><strong>Account information:</strong> If you use player authentication or link the Game to Apple Game Center, Google Play Games, or another supported account service, we may receive identifiers and basic profile information, such as a player ID, display name, or authentication token needed to sync progress and provide account features.</li>
+          <li><strong>Support communications:</strong> If you contact us, we may process your email address, message contents, device details you provide, and other information needed to respond.</li>
+        </ul>
+        
+        <h4>b. Device, Technical, Analytics, and Performance Data</h4>
+        
+        <ul>
+          <li><strong>Device and app data:</strong> Device model, operating system, app version, language, country or region inferred from device settings or IP address, network type, and similar technical information.</li>
+          <li><strong>Identifiers:</strong> App instance IDs, device identifiers, advertising identifiers where permitted, vendor identifiers, IP address, and identifiers generated by SDK providers.</li>
+          <li><strong>Usage and events:</strong> Gameplay events, session length, screens or features used, progression events, level attempts, rewards, purchases, ad interactions, and other in-game activity.</li>
+          <li><strong>Diagnostics:</strong> Crash logs, error reports, performance data, and other diagnostics used to maintain and improve stability.</li>
+        </ul>
 
-        // Function to fetch and render the markdown content
-        function fetchAndRenderMarkdown(url) {
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    contentDiv.innerHTML = marked.parse(text);
-                })
-                .catch(error => {
-                    console.error('Error fetching content:', error);
-                    contentDiv.innerHTML = '<p>Error loading content.</p>';
-                });
-        }
+        <h4>c. Unity Gaming Services Data</h4>
 
-        // Fetch and render the markdown content on page load
-        window.onload = function() {
-            fetchAndRenderMarkdown('RushRacerPrivacyPolicy.md');
-        }
-    </script>
-
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "02d012b9b9c04fd3b5ff4288876fc6ce"}'></script>
-    <!-- End Cloudflare Web Analytics -->
+        <p>We use Unity Gaming Services to operate game features including player authentication, cloud saves, analytics, diagnostics, remote configuration, cloud code, push notifications, cloud content delivery, and purchase-related backend functionality. Unity Gaming Services may process player identifiers, authentication data, gameplay progress, device and app information, analytics events, diagnostics and crash data, purchase-related events, device tokens needed to send push notifications, remote configuration data, and content delivery request metadata.</p>
+        
+        <h4>d. Advertising, Attribution, and Measurement Data</h4>
+        
+        <p>If ads, ad mediation, attribution, or measurement are enabled, we and our partners may collect and process:</p>
+        
+        <ul>
+          <li>Ad requests, impressions, clicks, completed views, rewarded ad events, revenue estimates, impression-level revenue data, and other ad delivery events.</li>
+          <li>Advertising identifiers, IP address, device information, approximate location, app usage events, and consent or privacy flags.</li>
+          <li>Purchase-related and attribution events used to understand ad campaign performance, in-app purchase performance, ad revenue, and fraud prevention.</li>
+          <li>Open Measurement and third-party measurement signals used to verify ad viewability, ad delivery, and ad performance.</li>
+        </ul>
+        
+        <h3>4. Advertising, Mediation, Attribution, and Third-Party Processing</h3>
+        
+        <p>Rush Racer may use third-party advertising, mediation, analytics, attribution, and measurement services. These providers help us deliver ads, measure performance, prevent fraud, and understand whether advertising campaigns are working. Their processing is also governed by their own terms and privacy policies.</p>
+        
+        <p>The Game may use:</p>
+        
+        <ul>
+          <li><strong>Unity LevelPlay / ironSource</strong> for ad mediation, waterfall or bidding management, ad delivery controls, reporting, fraud prevention, and service improvement.</li>
+          <li><strong>Google AdMob / Google Mobile Ads</strong> for ad serving, mediation demand, ad personalization where permitted, ad measurement, reporting, and fraud prevention.</li>
+          <li><strong>Unity Ads</strong> for ad serving, rewarded ads, ad personalization where permitted, ad measurement, reporting, and fraud prevention.</li>
+          <li><strong>Meta Audience Network</strong> for ad serving, demand, ad personalization where permitted, reporting, attribution, measurement, and fraud prevention.</li>
+          <li><strong>Pangle</strong> for ad serving, demand, ad personalization where permitted, reporting, attribution, measurement, and fraud prevention.</li>
+          <li><strong>Mintegral</strong> for ad serving, demand, ad personalization where permitted, reporting, attribution, measurement, and fraud prevention.</li>
+          <li><strong>AppLovin</strong> if enabled in our mediation settings, for ad serving, demand, ad personalization where permitted, ad measurement, reporting, fraud prevention, and service improvement. For more information about AppLovin's collection and use of information, visit: <a href="https://www.legal.applovin.com/privacy/" rel="noopener noreferrer">https://www.legal.applovin.com/privacy/</a></li>
+          <li><strong>Tenjin</strong> for mobile measurement partner services, attribution, campaign analytics, impression-level ad revenue reporting, purchase-related measurement, analytics, and fraud prevention.</li>
+          <li><strong>Open Measurement SDK and third-party measurement partners</strong> for ad viewability, verification, fraud prevention, and measurement services.</li>
+        </ul>
+        
+        <p>These partners may process information to show contextual ads, personalized ads where permitted, frequency-capped ads, rewarded ads, and measured ads; to attribute installs or purchases; to estimate or report ad revenue; to detect fraud or invalid traffic; to improve advertising services; and to comply with legal obligations.</p>
+        
+        <h3>5. How We Use Information</h3>
+        
+        <p>We use collected information for the following purposes:</p>
+        
+        <ul>
+          <li>To operate the Game and provide gameplay, progress saving, account linking, rewards, purchases, and support.</li>
+          <li>To store, sync, and restore player progress and settings.</li>
+          <li>To provide player authentication, cloud saves, remote configuration, cloud code, push notifications, cloud content delivery, and purchase-related backend functionality through Unity Gaming Services.</li>
+          <li>To monitor performance, diagnose crashes, fix bugs, and improve stability.</li>
+          <li>To understand how players use the Game and improve content, balance, features, and user experience.</li>
+          <li>To provide advertising, rewarded advertising, ad personalization where permitted, ad mediation, ad measurement, attribution, campaign analytics, fraud prevention, and reporting.</li>
+          <li>To process consent, opt-out, age, privacy, and platform signals and pass those signals to partners where required.</li>
+          <li>To enforce our terms, protect users and services, prevent abuse, and comply with legal obligations.</li>
+        </ul>
+        
+        <h3>6. Legal Bases for Processing</h3>
+        
+        <p>For users in the European Union, United Kingdom, EFTA/EEA, and similar jurisdictions, our legal bases for processing may include:</p>
+        
+        <ul>
+          <li><strong>Contractual necessity:</strong> To provide the Game, store progress, support account linking, deliver purchases, and operate requested features.</li>
+          <li><strong>Consent:</strong> For ad personalization, certain analytics, attribution, measurement, and partner processing where consent is legally required.</li>
+          <li><strong>Legitimate interests:</strong> To maintain security, prevent fraud, diagnose errors, improve the Game, provide contextual ads, and understand aggregate usage, where these interests are not overridden by your rights.</li>
+          <li><strong>Legal obligation:</strong> To comply with tax, accounting, consumer protection, privacy, platform, and other legal requirements.</li>
+        </ul>
+        
+        <p>You may withdraw consent where processing is based on consent, subject to legal or technical limitations.</p>
+        
+        <h3>7. Consent, Opt-Out, and Privacy Choices</h3>
+        
+        <p>Where legally required, including in the European Union, United Kingdom, EFTA/EEA, California, and other applicable regions, we request consent before enabling personalized advertising or other partner processing that requires consent. We also pass consent, age, &quot;Do Not Sell or Share&quot;, limit ad tracking, restricted processing, or similar privacy signals to advertising, mediation, analytics, attribution, and measurement partners as required by law, platform policy, and partner policy.</p>
+        
+        <p>Your choices may include:</p>
+        
+        <ul>
+          <li>Managing consent in the Game's privacy or consent settings, where available.</li>
+          <li>Resetting or limiting your mobile advertising identifier in your device settings.</li>
+          <li>Using Apple App Tracking Transparency controls on iOS where applicable.</li>
+          <li>Using Google advertising privacy controls on Android where applicable.</li>
+          <li>Opting out of sale, sharing, cross-context behavioral advertising, targeted advertising, or personalized advertising where required by California or other U.S. state privacy laws.</li>
+          <li>Contacting us to exercise privacy rights listed in this Privacy Policy.</li>
+        </ul>
+        
+        <p>Opting out of personalized advertising does not necessarily remove all ads. You may still receive contextual ads, frequency-capped ads, or ads needed to support rewarded ad features.</p>
+        
+        <h3>8. Sharing and Disclosure</h3>
+        
+        <p>We may disclose or make available information to:</p>
+        
+        <ul>
+          <li>Service providers and processors that help operate the Game, including Unity Gaming Services for player authentication, cloud saves, analytics, diagnostics, remote configuration, cloud code, push notifications, cloud content delivery, purchase-related backend functionality, support, security, and infrastructure.</li>
+          <li>Advertising networks, mediation platforms, demand partners, attribution providers, analytics providers, and measurement partners, including Unity LevelPlay / ironSource, Google AdMob, Unity Ads, Meta Audience Network, Pangle, Mintegral, AppLovin if enabled, Tenjin, and Open Measurement partners.</li>
+          <li>Platform services such as Apple Game Center, Apple App Store, Google Play, Google Play Games, and payment processors, when needed for platform functionality, purchases, account linking, or compliance.</li>
+          <li>Public authorities, regulators, courts, law enforcement, or other parties when required by law or valid legal process.</li>
+          <li>Successors or affiliates in connection with a merger, acquisition, financing, reorganization, or sale of assets.</li>
+        </ul>
+        
+        <p>We do not sell personal information for money. Under some U.S. state privacy laws, making advertising identifiers or similar data available to advertising partners for personalized ads can be legally classified as a &quot;sale&quot;, &quot;sharing&quot;, &quot;targeted advertising&quot;, or similar activity even when no money is exchanged. We honor legally required opt-out choices for those activities.</p>
+        
+        <h3>9. Data Retention</h3>
+        
+        <p>We retain personal data only for as long as reasonably necessary for the purposes described in this Privacy Policy, including to provide the Game, maintain records, resolve disputes, prevent fraud, comply with legal obligations, and enforce agreements. Retention periods vary depending on the data category, provider, platform, and legal requirement. When information is no longer needed, it is deleted, anonymized, or aggregated where reasonably possible.</p>
+        
+        <h3>10. International Transfers</h3>
+        
+        <p>The Game is available internationally. Information may be processed in Türkiye, the United States, the European Union, the United Kingdom, and other countries where we or our service providers operate. These countries may have data protection laws different from those in your location. Where required, we use appropriate safeguards such as Standard Contractual Clauses, adequacy decisions, contractual commitments, or other lawful transfer mechanisms.</p>
+        
+        <h3>11. Data Security</h3>
+        
+        <p>We use reasonable technical, administrative, and organizational safeguards designed to protect personal data against unauthorized access, alteration, disclosure, or destruction. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+        
+        <h3>12. Children's Privacy and COPPA</h3>
+        
+        <p>Rush Racer is not directed to children under 13, and is not intended for users legally considered children under applicable laws. We do not knowingly collect personal data from children.</p>
+        
+        <p>AppLovin requires that the AppLovin SDK must not initialize or be used for any user who qualifies as a child under applicable law, including COPPA and similar child privacy laws. We are responsible for determining whether a user is legally considered a child where required, and for preventing AppLovin SDK initialization and related advertising processing for such users. If we learn that we have collected personal data from a child without required consent, or that child-related data has been processed contrary to this Privacy Policy, we will take steps to delete or disable the data and processing as required.</p>
+        
+        <p>If you believe a child has provided personal data to us, contact us at hello@borkistanbul.com.</p>
+        
+        <h3>13. Your Rights</h3>
+        
+        <p>Depending on your location, you may have rights to:</p>
+        
+        <ul>
+          <li>Access the personal data we hold about you.</li>
+          <li>Correct inaccurate or incomplete data.</li>
+          <li>Delete personal data.</li>
+          <li>Restrict or object to certain processing.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+          <li>Receive a copy of your data in a portable format.</li>
+          <li>Opt out of sale, sharing, targeted advertising, cross-context behavioral advertising, or personalized advertising where applicable.</li>
+          <li>Appeal a privacy request decision where required by law.</li>
+        </ul>
+        
+        <p>To exercise rights, contact us using the details below. For deletion requests, you can also use the <a href="RushRacerDataDeletion.html">Rush Racer Data Deletion Request</a> page. We may need to verify your request before responding.</p>
+        
+        <h3>14. Third-Party Links and Policies</h3>
+        
+        <p>The Game, app stores, ads, or support materials may link to third-party websites, SDK policies, app store pages, or services. Their privacy practices are governed by their own policies. We encourage you to review the privacy policies of Unity, ironSource, Google, Meta, Pangle, Mintegral, AppLovin, Tenjin, Apple, and other partners that may appear in or process data through the Game.</p>
+        
+        <h3>15. Updates to This Privacy Policy</h3>
+        
+        <p>We may update this Privacy Policy from time to time. When we do, we will revise the &quot;Last Updated&quot; date and post the updated policy on our website and/or in the Game. Your continued use of the Game after an update means the updated policy applies, where permitted by law.</p>
+        
+        <h3>16. Contact Us</h3>
+        
+        <p>If you have questions or concerns about this Privacy Policy or our privacy practices, or if you wish to exercise privacy rights, contact us at:</p>
+        
+        <p>BÖRK BİLİŞİM YAZILIM VE TASARIM HİZMETLERİ LİMİTED ŞİRKETİ<br> TÜRKALİ MAH. MAŞUKLAR YOKUŞU SK NO:79/5 BEŞİKTAŞ<br> Istanbul, 34357, Türkiye<br> Email: hello@borkistanbul.com</p>
+        
+        <p><strong>By downloading, installing, accessing, or using Rush Racer, you acknowledge that you have read and understood this Privacy Policy.</strong></p>
+    </main>
 </body>
 </html>
