@@ -18,6 +18,8 @@
         header {
             background-color: #212323;
             color: #f5bf00;
+            box-sizing: border-box;
+            min-height: 255px;
             padding: 20px;
         }
         header img {
@@ -29,6 +31,17 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            line-height: 1.125;
+        }
+        @media (max-width: 700px) {
+            header {
+                min-height: 300px;
+            }
+        }
+        @media (max-width: 360px) {
+            header h1 {
+                font-size: 2rem;
+            }
         }
         .game-section {
             margin: 40px 0;

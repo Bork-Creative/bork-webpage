@@ -17,18 +17,36 @@
         header {
             background-color: #212323;
             color: #f5bf00;
+            box-sizing: border-box;
+            min-height: 255px;
             padding: 20px;
             text-align: center;
+        }
+        header a {
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
         }
         header img {
             max-width: 150px;
             height: auto;
-            margin: 10px auto;
+            margin: 0 auto;
             display: block;
         }
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            line-height: 1.125;
+        }
+        @media (max-width: 700px) {
+            header {
+                min-height: 300px;
+            }
+        }
+        @media (max-width: 360px) {
+            header h1 {
+                font-size: 2rem;
+            }
         }
         main {
             background-color: #fefefe;
